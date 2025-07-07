@@ -216,6 +216,16 @@
             }
         }, 400); // Espera a que el scroll termine
     });
+    // Cerrar menú hamburguesa al seleccionar una opción en móvil
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const menuToggle = document.getElementById('menu-toggle');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 900 && menuToggle.checked) {
+                menuToggle.checked = false;
+            }
+        });
+    });
     </script>
 </body>
 </html> 
