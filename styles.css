@@ -272,6 +272,11 @@ header {
     position: relative;
     z-index: 1;
 }
+.distributors p strong {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
 /* Contact */
 .contact {
     padding: 2rem;
