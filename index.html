@@ -115,7 +115,7 @@
         <section class="distributors" id="distribuidores">
             <h2 style="text-align:center;">¿Quieres ganar Dinero extra?</h2>
             <div style="display:flex;justify-content:center;align-items:center;gap:2rem;flex-wrap:wrap;margin:2rem 0;">
-                <video controls style="width:320px;height:320px;aspect-ratio:1/1;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.2);object-fit:cover;">
+                <video controls muted style="width:320px;height:320px;aspect-ratio:1/1;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.2);object-fit:cover;">
                     <source src="FOTOS/VIDEOS/video distribuidor.mp4" type="video/mp4">
                     Tu navegador no soporta la reproducción de video.
                 </video>
@@ -206,6 +206,16 @@
     if(window.location.hash) {
         window.location.hash = '';
     }
+    // Reproducir video de distribuidores al hacer clic en el menú
+    const linkDistribuidores = document.querySelector('a[href="#distribuidores"]');
+    linkDistribuidores.addEventListener('click', function() {
+        setTimeout(function() {
+            const videoDistribuidor = document.querySelector('section#distribuidores video');
+            if(videoDistribuidor) {
+                videoDistribuidor.play();
+            }
+        }, 400); // Espera a que el scroll termine
+    });
     </script>
 </body>
 </html> 
