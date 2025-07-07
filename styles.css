@@ -371,6 +371,18 @@ footer {
         width: 200px;
         height: 200px;
     }
+    .testimonial-list {
+        align-items: center !important;
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial {
+        align-items: center !important;
+        text-align: center !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media (max-width: 600px) {
   .form-container, .form-container form, .form-container input, .form-container button {
