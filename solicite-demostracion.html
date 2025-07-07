@@ -71,7 +71,11 @@
         if (params.get('autoplay') === '1') {
             const video = document.querySelector('video');
             if (video) {
-                video.play();
+                video.muted = true; // Asegura que esté silenciado
+                video.play().catch(() => {
+                    // Si el navegador bloquea el autoplay, intenta reproducir cuando el usuario interactúe
+                    document.body.addEventListener('click', () => video.play(), { once: true });
+                });
             }
         }
     });
