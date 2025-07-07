@@ -352,6 +352,9 @@ footer {
         top: 60px;
         left: 0;
         z-index: 10;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
     }
     .nav-links li {
         margin: 1rem 0;
@@ -361,6 +364,8 @@ footer {
     }
     .menu-toggle:checked + .menu-icon + .nav-links {
         display: flex;
+        opacity: 1;
+        pointer-events: auto;
     }
     .hero-img {
         width: 200px;
