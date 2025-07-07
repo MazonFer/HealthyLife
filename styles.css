@@ -347,7 +347,8 @@ footer {
         flex-direction: column;
         width: 100%;
         display: none;
-        background: #1a237e;
+        background: rgba(255,255,255,0.95);
+        box-shadow: 0 4px 16px rgba(30,41,59,0.10);
         position: absolute;
         top: 60px;
         left: 0;
@@ -358,6 +359,13 @@ footer {
     }
     .nav-links li {
         margin: 1rem 0;
+    }
+    .nav-links li a {
+        color: #1a237e !important;
+        font-weight: bold;
+    }
+    .nav-links li a:hover {
+        color: #ffb300 !important;
     }
     .menu-icon {
         display: block;
