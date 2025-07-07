@@ -367,6 +367,45 @@ footer {
         height: 200px;
     }
 }
+@media (max-width: 600px) {
+  .form-container, .form-container form, .form-container input, .form-container button {
+    max-width: 100%;
+    width: 100%;
+  }
+  .form-container {
+    padding: 1rem 0.5rem;
+  }
+  .navbar {
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .hero-content, .hero-img {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-img, .hero-img img, video, img {
+    max-width: 100%;
+    height: auto;
+  }
+  .features-list, .products-list, .testimonial-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card.feature {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .underline-anim {
     position: relative;
     display: inline-block;
