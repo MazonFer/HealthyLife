@@ -50,10 +50,11 @@
 <body>
     <div class="form-container">
         <h2>Solicite Información</h2>
-        <form>
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="Celular" required>
+        <form action="https://formsubmit.co/fernando.mazon.legarda@gmail.com" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="celular" placeholder="Celular" required>
+            <input type="hidden" name="_next" value="index.html">
             <button type="submit">Enviar</button>
         </form>
     </div>
